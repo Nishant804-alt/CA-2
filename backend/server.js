@@ -6,7 +6,7 @@ const app = express();
 
 dotenv.config();
 connectDB();
-app.use(express.json)
+app.use(express.json());
 
 app.use('/api/user', Router)
 app.get('/', async (req, res) => {
